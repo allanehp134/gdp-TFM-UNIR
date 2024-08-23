@@ -5,7 +5,7 @@ import math
 st.title("Modelo para la deteccion de fraudes por Montos")
 
 # Cargar archivo CSV
-uploaded_file = st.file_uploader("Sube tu archivo CSV", type=["csv"])
+uploaded_file = st.file_uploader("Sube tu archivo CSV", type=["xlsx", "xls"])
 if uploaded_file is not None:
     # Leer el archivo CSV
     df = pd.read_csv(uploaded_file)
